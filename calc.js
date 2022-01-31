@@ -11,17 +11,20 @@ for(item of buttons)
 
         if(buttonText == 'X')
         {
+            flag=0;
             buttonText = '*';
             screenValue += buttonText;
             screen.value = screenValue;
         }
         else if(buttonText == 'DEL')
         {
+            flag=0;
             screenValue ='';
             screen.value = screenValue;
         }
         else if(buttonText == '√x')
         {
+            flag=0;
             screen.value=Math.sqrt(screenValue);
         }
         else if(buttonText == '=')
@@ -31,7 +34,11 @@ for(item of buttons)
             screenValue='';
             screenValue += screen.value;
         }
-        else if(flag == 1 && !(screenValue.endsWith('+') || screenValue.endsWith('-') || screenValue.endsWith('*') || screenValue.endsWith('/') ) && (buttonText == '0' || buttonText == '1' || buttonText == '2' || buttonText == '3' || buttonText == '4' || buttonText == '5' || buttonText == '6' ||buttonText == '7' ||buttonText == '8' || buttonText == '9'))
+        else if(flag == 1 && !(screenValue.endsWith('+') ||
+         screenValue.endsWith('-') || screenValue.endsWith('*') ||
+         screenValue.endsWith('/') ) && (buttonText == '0' || buttonText == '1' ||
+         buttonText == '2' || buttonText == '3' || buttonText == '4' || buttonText == '5' ||
+         buttonText == '6' ||buttonText == '7' ||buttonText == '8' || buttonText == '9' || buttonText == '00'))
         {
             screenValue='';
             screenValue +=buttonText;
@@ -40,11 +47,13 @@ for(item of buttons)
         }
         else if(buttonText == '⬅')
         {
+            flag=0;
             screenValue = screenValue.substring(0,screenValue.length-1);
             screen.value = screenValue;
         }
         else
         {
+            flag=0;
             screenValue += buttonText;
             screen.value = screenValue;
         }

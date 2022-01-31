@@ -28,16 +28,17 @@ td button{
 input{
     width: 244px;
     height: 55px;
-    border: 2px solid rgb(169, 175, 169);
+    border: 2px solid rgb(156, 165, 156);
     border-radius: 10px;
     font-size: 30px;
     text-align: right;
     background-color: #a7af7c;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 0 2px rgba(29, 29, 29, 0.75);
 }
 
 #but1{
     background-color: rgb(53, 164, 228);
+    height: 124px;
 }
 
 #clear{
@@ -90,7 +91,7 @@ body.light .btn{
     inset 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 body.light .calculator{
-    background-color: rgb(214, 231, 225);
+    background-color: rgb(184, 212, 202);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15),
     5px 5px 30px rgba(0, 0, 0, 0.15),
     inset -2px -2px 5px rgba(0, 0, 0, 0.15),
